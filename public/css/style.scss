@@ -1,8 +1,11 @@
 $primaryColor: #eeccff;
 
+$firstValue: 62.5%;
+$firstValue: 24px !default;
+
 body {
   // variable scope, when declared within selector, it is scoped within
-  $primaryColor: #ccc;
+  $primaryColor: #ccc !global; // set a variable globally from within a declaration
   background: $primaryColor;
 }
 
