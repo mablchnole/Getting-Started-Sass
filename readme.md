@@ -1,1 +1,1 @@
-Individual study to learn Sass
+Independent study to learn Sass
