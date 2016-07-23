@@ -1,16 +1,23 @@
-$primaryColor: #eeccff;
-
-$firstValue: 62.5%;
-$firstValue: 24px !default;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
 
 body {
-  // variable scope, when declared within selector, it is scoped within
-  $primaryColor: #ccc !global; // set a variable globally from within a declaration
-  background: $primaryColor;
+  font: 100% $font-stack;
+  color: $primary-color;
 }
 
-p {
-  color: $primaryColor;
-}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-// when compiled, our paragraph selector's color is #eeccff
+  li {display: inline-block}
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
